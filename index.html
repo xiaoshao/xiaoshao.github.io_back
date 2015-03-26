@@ -89,11 +89,19 @@
 <h3 id="install_ssh">install ssh</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew <span class="keyword">install</span> ssh</span><br></pre></td></tr></table></figure>
 <h4 id="generate_ssh_key_pair">generate ssh key pair</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
 <h3 id="copy_ssh_public_key_which_is_under_~/-ssh_directory_to_github">copy ssh public key which is under <code>~/.ssh</code> directory to github</h3><p><img src="images/ssh keys.png" alt="add ssh key"></p>
+<h2 id="Init_blog_with_hexo">Init blog with hexo</h2><h3 id="Install_hexo">Install hexo</h3><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">$npm</span> install hexo -<span class="keyword">g</span></span><br></pre></td></tr></table></figure>
+<h3 id="Create_root_directory_and_init_blog">Create root directory and init blog</h3><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> firstblog &amp;&amp; <span class="built_in">cd</span> firstblog</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<h3 id="Start_hexo_server_and_access_the_local_site">Start hexo server and access the local site</h3><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo <span class="keyword">server</span></span><br></pre></td></tr></table></figure>
+<p>access the local site by local:4000</p>
+<h4 id="Config_the_hexo_config_file__config-yml">Config the hexo config file <code>_config.yml</code></h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">type</span>: git</span><br><span class="line"><span class="attribute">repo</span>: git<span class="variable">@git</span>.com.....</span><br><span class="line"><span class="attribute">branch</span>: master</span><br><span class="line"><span class="attribute">message</span>: <span class="string">"upload blog"</span></span><br></pre></td></tr></table></figure>
+<h3 id="deploy_blog_to_github">deploy blog to github</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> deploy</span><br></pre></td></tr></table></figure>
+<h2 id="Write_first_blog">Write first blog</h2><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="built_in">new</span> <span class="built_in">post</span> <span class="string">"first blog"</span></span><br></pre></td></tr></table></figure>
+<p>it will generate a <code>first-blog.md</code> in the <code>source</code> directory<br><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: first blog</span><br><span class="line">date:<span class="number">2015</span>-<span class="number">11</span>-<span class="number">14</span></span><br><span class="line">tags:[<span class="keyword">...</span>]</span><br><span class="line">discription: <span class="string">"....."</span></span><br><span class="line">-----</span><br><span class="line"><span class="comment">##This is my first blog</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/26/How-to-build-a-indenpendent-static-site-blog-based-on-github/" data-id="ci7q6eqfq0000ep3s0h9dvy0n" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/03/26/How-to-build-a-indenpendent-static-site-blog-based-on-github/" data-id="ci7q6kadx0000kc3sjxyert5e" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/start/">start</a></li></ul>
@@ -140,7 +148,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/03/25/hello-world/" data-id="ci7q6eqgd0003ep3stncakv73" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/03/25/hello-world/" data-id="ci7q6kael0003kc3sxgjvppba" class="article-share-link">Share</a>
       
       
     </footer>
