@@ -64,6 +64,42 @@
   <header>
     
       <div class="icon"></div>
+      <a href="/2015/03/30/scala-基础1/">
+  <time datetime="2015-03-30T13:32:35.000Z">
+    2015-03-30
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title"><a href="/2015/03/30/scala-基础1/">scala-基础1</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <h2 id="val和def的区别">val和def的区别</h2><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">scala&gt; <span class="function"><span class="keyword">val</span> <span class="title">x</span> =</span> <span class="number">1</span></span><br><span class="line">	x: <span class="type">Int</span> = <span class="number">1</span></span><br><span class="line">scala&gt; <span class="function"><span class="keyword">def</span> <span class="title">y</span> =</span> <span class="string">"foo"</span></span><br><span class="line">	y: <span class="type">String</span></span><br></pre></td></tr></table></figure>
+<p>这两者的区别在于：<br>    val定义的是值，即Call-By-Value操作<br>    def则会做Call-By－Name操作</p>
+<h2 id="Call-By-Name的定义方式">Call-By-Name的定义方式</h2><p>Call-By-Name的定义 def test1(x: =&gt; Boolean) x </p>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+  
+    <article class="post">
+  <header>
+    
+      <div class="icon"></div>
       <a href="/2015/03/28/AWK-基础/">
   <time datetime="2015-03-28T14:14:53.000Z">
     2015-03-28
@@ -79,8 +115,8 @@
   
   <div class="entry">
     
-      <p>AWK是对一个文件或者一个text集合，对于与正则表达式相匹配的每一行进行相关操作。<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">awk</span> -F <span class="string">':'</span> <span class="string">'/pattern/ &#123;print <span class="variable">$0</span>&#125;'</span> inputfile</span><br></pre></td></tr></table></figure></p>
-
+      <h1 id="AWK介绍">AWK介绍</h1><p>AWK是对一个文件或者一个text集合，对于与正则表达式相匹配的每一行进行相关操作。<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">awk</span> -F <span class="string">':'</span> <span class="string">'/pattern/ &#123;print <span class="variable">$0</span>&#125;'</span> inputfile</span><br></pre></td></tr></table></figure></p>
+<h4 id="以上是对inputfile中的每一个匹配上pattern的行进行_print处理，其中$0代表当前行的所有内容。">以上是对inputfile中的每一个匹配上pattern的行进行 print处理，其中$0代表当前行的所有内容。</h4><h2 id="AWK内置变量介绍">AWK内置变量介绍</h2>
     
   </div>
   <footer class="end-sep">
@@ -213,7 +249,7 @@
 
 
 <script type="text/javascript">
-  var duoshuoQuery = { short_name: '969619529' };
+  var duoshuoQuery = { short_name: 'junzhe' };
   (function() {
     var ds = document.createElement('script');
     ds.type = 'text/javascript';
